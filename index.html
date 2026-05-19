@@ -2,450 +2,329 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>X-Sense</title>
+<title>X-Sense Tutorial | ECCV 2026</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta name="description" content="" />
-<meta name="author" content="http://webthemez.com" />
-<!-- css -->
+<meta name="description" content="ECCV 2026 X-Sense Tutorial on cooperative perception, distributed foundation models, VLA agents, and scenario-based safety validation for smart mobility." />
 <link href="css/bootstrap.min.css" rel="stylesheet" />
-<link href="css/fancybox/jquery.fancybox.css" rel="stylesheet">
-<link href="css/jcarousel.css" rel="stylesheet" />
-<link href="css/flexslider.css" rel="stylesheet" />
-<link href="js/owl-carousel/owl.carousel.css" rel="stylesheet">
+<link href="css/font-awesome.css" rel="stylesheet" />
 <link href="css/style.css" rel="stylesheet" />
- 
-<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-<!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->	  
 </head>
-<body>
+<body class="tutorial-page">
 <div id="wrapper">
-	<!-- start header -->
 	<header>
-        <div class="navbar navbar-default navbar-static-top">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="index.html"><img src="img/ICCV-2025-Logo-Color.png" alt="logo" style="width:210px; height:40px;"/></a>
-                </div>
-                <div class="navbar-collapse collapse ">
-                    <ul class="nav navbar-nav">
-                        <li class="active"><a href="index.html">Home</a></li> 
-						<li><a href="#overview" class="scroll-link">Overview</a></li>
-						<li><a href="#Keynote_Speakers" class="scroll-link">Keynote Speakers</a></li>
-						<li><a href="#Schedules" class="scroll-link">Schedules</a></li>
-						<li><a href="#Accepted_Papers">Accepted Papers</a></li>
-						<li><a href="#Call_4_papers">Call for Papers</a></li>
-						<!-- <li><a href="services.html">Services</a></li>
-                        <li><a href="portfolio.html">Portfolio</a></li>
-                        <li><a href="pricing.html">Pricing</a></li>
-                        <li><a href="contact.html">Contact</a></li> -->
-                    </ul>
-                </div>
-            </div>
-        </div>
+		<div class="navbar navbar-default navbar-static-top">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand tutorial-brand" href="#home" aria-label="X-Sense Tutorial home">
+						<img src="img/X_sense.png" alt="X-Sense">
+						<span>ECCV 2026 X-Sense Tutorial</span>
+					</a>
+				</div>
+				<div class="navbar-collapse collapse">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="#home">Home</a></li>
+						<li><a href="#overview">Overview</a></li>
+						<li><a href="#modules">Modules</a></li>
+						<li><a href="#speakers">Speakers</a></li>
+						<li><a href="#structure">Structure</a></li>
+						<li><a href="#verification">Verification</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
 	</header>
-	<!-- end header -->
-	
-<!-- Slider -->
-	<div id="main-slider" class="flexslider">
-		<ul class="slides">
-			<li>
-			<img src="img/iccv_honolulu_2.png" alt="" style="width:100%; height: 100%;" />
-			<div class="flex-caption">
-				<h3>X-Sense:</h3> 
-				<h2>Ego-Exo Sensing for Smart Mobility Workshop</h2>
-				<p>In Conjunction with the International Conference on Computer Vision 2025</p> 
-				<p>Hawai'i Convention Center @ Room 323C
-				<p>October 20, 2025</p>
-			</div>
-			</li>
-              <!-- <li>
-                <img src="img/slides/2.jpg" alt="" />
-                <div class="flex-caption">
-                    <h3>Fully Responsive</h3> 
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elitincidunt eius magni provident.</p> 
-                </div>
-              </li>
-              <li>
-                <img src="img/slides/3.jpg" alt="" />
-                <div class="flex-caption">
-                    <h3>Multi-purpose Theme</h3> 
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit donec mer lacinia.</p>  
-                </div>
-              </li> -->
-		</ul>
-	</div>
-	<!-- end slider -->
- 
-<section id="overview">
-	<div class="container">
-	<div class="content_white">
-		<div class="block-heading-two text-center">
-			<h2>Overview</h2>
-		  <p class="overview-paragraph">
-			This workshop explores a holistic approach to ego-exo sensing, integrating vehicle sensors, roadside
-		  cameras, aerial imagery, and V2V communications to advance transportation intelligence and drive
-		  progress toward smart mobility. We examine how ego-exo sensing networks enhance safety-critical
-		  scenario detection and generation, comprehensive environmental perception, cooperative driving, and
-		  multi-agent decision making, among other crucial tasks shaping the future of mobility. This workshop
-		  bridges siloed research efforts to create unified approaches for heterogeneous sensor fusion that will
-		  define next-generation mobility systems.
-		  </p>
-		</div>
-	</div>	  	
-</div>	
-</section>
-<!-- <div class="featured_content">
-  <div class="container">
-    <div class="row text-center">
-      <div class="col-md-3 feature_grid1"> <i class="fa fa-trophy fa-3x"></i>
-        <h3><a href="#">Legimusinm</a></h3>
-        <p>Lorem ipsum dolor sit amet, unde omnis iste natus error sit voluptatem accusanti quas potenti malesuada vel phasellus.</p>
-        <a href="#" class="feature_btn">More</a> </div>
-      <div class="col-md-3 feature_grid1"> <i class="fa fa-picture-o fa-3x"></i>
-        <h3><a href="#">Serspiciatis</a></h3>
-        <p>Lorem ipsum dolor sit amet, unde omnis iste natus error sit voluptatem accusanti quas potenti malesuada vel phasellus.</p>
-        <a href="#" class="feature_btn">More</a> </div>
-      <div class="col-md-3 feature_grid1"> <i class="fa fa-flask fa-3x"></i>
-        <h3><a href="#">Quisqugesta</a></h3>
-        <p>Lorem ipsum dolor sit amet, unde omnis iste natus error sit voluptatem accusanti quas potenti malesuada vel phasellus.</p>
-        <a href="#" class="feature_btn">More</a> </div>
-      <div class="col-md-3 feature_grid1"> <i class="fa fa-user fa-3x"></i>
-        <h3><a href="#">Architecto</a></h3>
-        <p>Lorem ipsum dolor sit amet, unde omnis iste natus error sit voluptatem accusanti quas potenti malesuada vel phasellus.</p>
-        <a href="#" class="feature_btn">More</a> </div>
-    </div>
-  </div>
-</div> -->
-<section id="Keynote_Speakers">
-	<div class="container">
-	  <div class="block-heading-two text-center">
-		<h3><span>Keynote Speakers</span></h3>
-	  </div>
-  
-	  <div class="row team-six">
-		<div class="col-md-4 col-sm-6">
-		  <div class="team-member text-center">
-			<img class="img-responsive" src="img/People/Cathy_Wu.jpg" alt="">
-			<h4><a href="http://www.wucathy.com/blog/">Cathy Wu</a></h4>
-			<span class="deg">MIT</span>
-		  </div>
-		</div>
-  
-		<div class="col-md-4 col-sm-6">
-		  <div class="team-member text-center">
-			<img class="img-responsive" src="img/People/Manmohan_Chandraker.jpg" alt="">
-			<h4><a href="https://cseweb.ucsd.edu/~mkchandraker/">Manmohan Chandraker</a></h4>
-			<span class="deg">NEC Labs & UCSD</span>
-		  </div>
-		</div>
 
-		  <div class="col-md-4 col-sm-6">
-			<div class="team-member text-center">
-			  <img class="img-responsive" src="img/People/Bharath Hariharan.jpg" alt="">
-			  <h4><a href="https://www.cs.cornell.edu/~bharathh/">Bharath Hariharan</a></h4>
-			  <span class="deg">Cornell University</span>
+	<main id="home">
+		<section class="tutorial-hero">
+			<div class="hero-media" aria-hidden="true">
+					<img src="img/malmo-cityscape-blue-hour.jpg" alt="">
 			</div>
-		  </div>
-  
-		<div class="col-md-4 col-sm-6">
-		  <div class="team-member text-center">
-			<img class="img-responsive" src="img/People/zhengzhong.png" alt="">
-			<h4><a href="https://vztu.github.io/">Zhengzhong Tu</a></h4>
-			<span class="deg">TAMU</span>
-		  </div>
-		</div>
-  
-		<div class="col-md-4 col-sm-6">
-		  <div class="team-member text-center">
-			<img class="img-responsive" src="img/People/Bolei_Zhou.jpg" alt="">
-			<h4><a href="https://boleizhou.github.io/">Bolei Zhou</a></h4>
-			<span class="deg">UCLA & Coco Robotics</span>
-		  </div>
-		</div>
-  
-		<div class="col-md-4 col-sm-6">
-		  <div class="team-member text-center">
-			<img class="img-responsive" src="img/People/Boyi_Li.jpg" alt="">
-			<h4><a href="https://sites.google.com/site/boyilics/home">Boyi Li</a></h4>
-			<span class="deg">NVIDIA Research & UC Berkeley</span>
-		  </div>
-		</div>
-  
-		<div class="col-md-4 col-sm-6">
-		  <div class="team-member text-center">
-			<img class="img-responsive" src="img/People/Katie_luo.jpg" alt="">
-			<h4><a href="https://www.cs.cornell.edu/~katieluo/">Katie Z Luo</a></h4>
-			<span class="deg">Cornell University & Stanford University</span>
-		  </div>
-		</div>
-	  </div>
-	</div>
-</section>
-  
-<section id="Schedules">
-<div class="container">
-	<div class="block-heading-two text-center">
-		<h3><span>Schedules</span></h3>
-	</div>
-	<div class="table-responsive">
-	  <table class="table table-bordered table-striped text-left">
-		<thead class="thead-dark">
-		  <tr>
-			<th>Start Time</th>
-			<th>End Time</th>
-			<th>Event</th>
-		  </tr>
-		</thead>
-		<tbody>
-		  <tr><td>09:00</td><td>09:10</td><td>Opening remarks</td></tr>
-		  <tr><td>09:10</td><td>09:40</td><td>Invited talk #1 – Prof. Bharath Hariharan <br> Topic: Seeing through The Eye in the Sky</td></tr>
-		  <tr><td>09:40</td><td>10:10</td><td>Invited talk #2 – Prof. Cathy Wu <br> Topic: Mitigating Metropolitan Carbon Emissions with Dynamic Eco-driving at Scale</td></tr>
-		  <tr><td>10:10</td><td>10:30</td><td>Oral Presentation #1 <br> 1. ArgoTweak: Towards Self-Updating HD Maps through Structured Priors <br> 2. QuantV2X: A Fully Quantized Multi-Agent System for Cooperative Perception </td></tr>
-		  <tr><td>10:30</td><td>10:50</td><td>Coffee break</td></tr>
-		  <tr><td>10:50</td><td>11:20</td><td>Invited talk #3 – Prof. Manmohan Chandraker <br> Topic: Towards Agentic Autonomy</td></tr>
-		  <tr><td>11:20</td><td>11:40</td><td>Oral Presentation #2 <br>1. TurboTrain: Towards Efficient and Balanced Multi-Task Learning for Multi-Agent Perception and Prediction <br>2. InSPE: Rapid Evaluation of Heterogeneous Multi-Modal Infrastructure Sensor Placement </td></tr>
-		  <tr><td>11:40</td><td>12:30</td><td>Poster Section</td></tr>
-		  <tr><td>12:30</td><td>13:30</td><td>Lunch break</td></tr>
-		  <tr><td>13:30</td><td>14:00</td><td>Invited talk #4 – Dr. Katie Z Luo <br> Topic: Leveraging Auxiliary Information for Self-Driving Perception</td></tr>
-		  <tr><td>14:00</td><td>14:30</td><td>Invited talk #5 – Prof. Zhengzhong Tu <br> Topic: Agentic V2X Systems: Towards Smarter, Safer, and More Trustworthy Connected Mobility</td></tr>
-		  <tr><td>14:30</td><td>15:00</td><td>Invited talk #6 – Prof. Bolei Zhou <br> Topic: Scaling Physical AI for Sidewalk Autonomy</td></tr>
-		  <tr><td>15:00</td><td>15:30</td><td>Coffee break</td></tr>
-		  <tr><td>15:30</td><td>16:00</td><td>Invited talk #7 – Dr. Boyi Li <br> Topic: Learning to simulate multimodal robot worlds</td></tr>
-		  <tr><td>16:00</td><td>17:00</td><td>Panel on future ego-exo sensing for smart mobility</td></tr>
-		  <tr><td>18:00</td><td>20:00</td><td>Social Networking and Dinner (Location will be announced during the workshop) </td></tr>	
-		</tbody>
-	  </table>
-	</div>
-</div>
-</section>
-<!-- Accepted Papers -->
-<section id="Accepted_Papers">
-	<div class="container">
-					
-	<div class="row">
-		<div class="col-md-12">
-			<div class="about-logo">
-				<h3>Accepted Papers</h3>
-				<p>
-					Oral Papers:
-				</p>
-				<ul style="line-height: 1.8; margin-top: 15px;">
-					<li>ArgoTweak: Towards Self-Updating HD Maps through Structured Priors</li>
-					<li>TurboTrain: Towards Efficient and Balanced Multi-Task Learning for Multi-Agent Perception and Prediction</li>
-					<li>QuantV2X: A Fully Quantized Multi-Agent System for Cooperative Perception</li>
-					<li>InSPE: Rapid Evaluation of Heterogeneous Multi-Modal Infrastructure Sensor Placement</li>
-				</ul>
-				<p>
-					Poster Papers:
-					<ul style="line-height: 1.8; margin-top: 15px;">
-					<li>O-MaMa: Learning Object Mask Matching between Egocentric and Exocentric Views</li>
-					<li>Learning 3D Perception from Others' Predictions</li>
-					<li>Enhancing Text-to-Image Retrieval with VLM Reranking via Contrastive Reinforcement Learning</li>
-					<li>MamV2XCalib: V2X-based Target-less Infrastructure Camera Calibration with State Space Model</li>
-					<li>PhraseStereo: The First Open-Vocabulary Stereo Image Segmentation Dataset</li>
-					<li>EgoExoBench: A Benchmark for First- and Third-person View Video Understanding in MLLMs</li>
-					<li>RelMap: Enhancing Online Map Construction with Class-Aware Spatial Relation and Semantic Priors</li>
-					<li>PLEUM: A Framework for Benchmarking Ego-Exo Perception Gaps in Polish Urban Mobility</li>
-					<li>SmartCityZero: Label-Free 3D Perception through RSU-to-Vehicle Collaboration</li>
-					<li>SAGE: A Synchronized Action and Gaze Estimation Framework for Ego-Exo Human Behavior Analysis</li>
-					<li>Ego-ExoFusion: Benchmarking Multi-Agent Interaction and Trajectory Prediction using Integrated Egocentric and Exocentric Views</li>
-					<li>Beyond Pixels: Metadata Fusion for Enhanced Driving Scene Segmentation</li>
-					<li>AirV2X: Unified Air-Ground Vehicle-to-Everything Collaboration</li>
-					<li>V2V-GoT: Vehicle-to-Vehicle Cooperative Autonomous Driving with Multimodal Large Language Models and Graph-of-Thoughts</li>
-					<li>RadarSplat: Radar Gaussian Splatting for High-Fidelity Data Synthesis and 3D Reconstruction of Autonomous Driving Scenes</li>
-				</p>
-			</div>
-		</div>
-	</div>
-
-
-	
-<!-- Call for papers -->
-<section id="Call_4_papers">
-	<div class="container">
-					
-	<div class="row">
-		<div class="col-md-12">
-			<div class="about-logo">
-				<h3>Call for Papers</h3>
-				<p>
-					We invite high-quality submissions addressing integrated ego-exo sensing for smart mobility.
-					Relevant topics include, but are not limited to:
-				</p>
-				<ul style="line-height: 1.8; margin-top: 15px;">
-					<li>Collection of synchronized egocentric and exocentric data for smart mobility</li>
-					<li>Detection and generation of safety-critical and edge-case scenarios via ego-exo sensing</li>
-					<li>Efficient annotation of egocentric and exocentric data</li>
-					<li>Privacy-preserving and anonymization techniques for cross-sensor data</li>
-					<li>Multimodal large models for scene understanding, cooperative driving, and multi-agent decision-making</li>
-					<li>Modeling and simulation of heterogeneous traffic behavior via integrated ego-exo sensing modalities</li>
-					<li>Data generation for training and testing cooperative driving systems</li>
-					<li>Modeling of multi-agent interaction and decision processes</li>
-					<li>Benchmarking safety, pollution, and efficiency in smart mobility systems</li>
-				</ul>
-			</div>
-		</div>
-	</div>	  
-
-	<div class="row">
-		<div class="col-md-12">
-			<div class="about-logo">
-				<h3>Submission Instructions</h3>
-				<p>
-				  We offer a flexible platform for presenting a broad range of contributions:
-				</p>
-				<ul style="line-height: 1.8; margin-top: 15px;">
-					<li> <b>Extended Abstracts and Short Papers:</b> Submissions of up to 4 pages (excluding references) are welcome, including work in progress, negative results with value to the community, or thought-provoking position papers on relevant topics. </li>
-					<li> <b>Previously Published Work:</b> We also invite submissions of papers previously published elsewhere, including those accepted to the main ICCV 2025 conference. Submissions of up to 8 pages (excluding references) are welcome. </li>
-				</ul>
-				<p>
-				All submissions should follow the <a href="https://iccv.thecvf.com/Conferences/2025/AuthorGuidelines"> ICCV 2025 formatting guidelines </a>. Accepted papers will be presented at the workshop as oral presentations or posters. 
-				</p>
-				
-			</div>
-		</div>
-	</div>
-		<div class="row">
-		<div class="col-md-12">
-			<div class="about-logo">
-				<h3>Important Dates</h3>
-				<ul style="line-height: 1.8; margin-top: 15px;">
-					<li>	<b>Submission Deadline:</b> September 8 <del>August 31</del>, 2025 09:59 AM GMT  </li>
-					<li>	<b>Preliminary Author Notification:</b> September 21 <del>14</del>, 2025 </li>		
-					<li>	<b>Submission Portal:</b> <a href="https://openreview.net/group?id=thecvf.com/ICCV/2025/Workshop/X-Sense&referrer=%5BHomepage%5D(%2F)#tab-your-consoles"> OpenReview </a> </li>
-			</ul>
-			</div>
-		</div>
-	</div>		
-</div>
-</section>
-
-	<!-- Our Team starts -->
-<section id="Organizers">
-	<div class="container">
-		<div class="block-heading-two text-center">
-		<h3><span>Organizers</span></h3>
-		</div>
-		
-		<!-- Our team starts -->
-		
-		<div class="row team-six">
-			<div class="row">
-			  <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-				<div class="team-member text-center">
-				  <img class="img-responsive" src="img/People/Yi_Ting_Chen.png" alt="">
-				  <h4><a href="https://sites.google.com/site/yitingchen0524/home">Yi-Ting Chen</a></h4>
-				  <span class="deg">National Yang Ming Chiao Tung University</span>
-				</div>
-			  </div>
-		  
-			  <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-				<div class="team-member text-center">
-				  <img class="img-responsive" src="img/People/Katie_luo.jpg" alt="">
-				  <h4><a href="https://www.cs.cornell.edu/~katieluo/">Katie Z Luo</a></h4>
-				  <span class="deg">Cornell University & Stanford University</span>
-				</div>
-			  </div>
-		  
-			  <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-				<div class="team-member text-center">
-				  <img class="img-responsive" src="img/People/Wei-Chiu_Ma.png" alt="">
-				  <h4><a href="https://www.cs.cornell.edu/~weichiu/">Wei-Chiu Ma</a></h4>
-				  <span class="deg">Cornell University</span>
-				</div>
-			  </div>
-		  
-			  <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-				<div class="team-member text-center">
-				  <img class="img-responsive" src="img/People/Stephany Berrio Perez.jpg" alt="">
-				  <h4><a href="https://www.sydney.edu.au/engineering/about/our-people/academic-staff/stephany-berrioperez.html">Stephany Berrio Perez</a></h4>
-				  <span class="deg">University of Sydney</span>
-				</div>
-			  </div>
-		  
-			  <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-				<div class="team-member text-center">
-				  <img class="img-responsive" src="img/People/Boris Ivanovic.jpg" alt="">
-				  <h4><a href="https://www.borisivanovic.com/">Boris Ivanovic</a></h4>
-				  <span class="deg">NVIDIA Research</span>
-				</div>
-			  </div>
-		  
-			  <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-				<div class="team-member text-center">
-				  <img class="img-responsive" src="img/People/Min-Hung_Chen.png" alt="">
-				  <h4><a href="https://minhungchen.netlify.app/">Min-Hung Chen</a></h4>
-				  <span class="deg">NVIDIA Research</span>
-				</div>
-			  </div>
-		  
-			  <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-				<div class="team-member text-center">
-				  <img class="img-responsive" src="img/People/Zhenzhen_Liu.jpg" alt="">
-				  <h4><a href="https://zhenzhel.github.io/">Zhenzhen Liu</a></h4>
-				  <span class="deg">Cornell University</span>
-				</div>
-			  </div>
-		  
-			  <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-				<div class="team-member text-center">
-				  <img class="img-responsive" src="img/People/Zi-Hui Li.jpg" alt="">
-				  <h4><a href="https://sites.google.com/site/yitingchen0524/hcis-lab?authuser=0">Zi-Hui Li</a></h4>
-				  <span class="deg">National Yang Ming Chiao Tung University</span>
-				</div>
-			  </div>
-			</div>
-		</div>
-	</div>
-		<!-- Our team ends -->
-</div>
-</section>
-
-	<div id="sub-footer">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-6">
-					<div class="copyright">
-						<p>
-							<span>&copy; Target 2014 All right reserved. By </span><a href="http://webthemez.com" target="_blank">WebThemez</a>
-						</p>
+			<div class="container hero-content">
+				<div class="hero-copy">
+					<p class="eyebrow">Malmö, Sweden | ECCV 2026</p>
+					<h1>X-Sense: Cooperative Perception and Distributed Foundation Models for Smart Mobility</h1>
+					<p class="hero-lede">A full-day tutorial on cooperative sensing, multi-agent perception, distributed VLA agents, and scenario-based safety validation.</p>
+					<div class="hero-actions">
+						<a class="btn btn-primary" href="#modules">View Modules</a>
+						<a class="btn btn-ghost" href="#speakers">Speaker List</a>
 					</div>
 				</div>
-				<!-- <div class="col-lg-6">
-					<ul class="social-network">
-						<li><a href="#" data-placement="top" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-						<li><a href="#" data-placement="top" title="Twitter"><i class="fa fa-twitter"></i></a></li>
-						<li><a href="#" data-placement="top" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
-						<li><a href="#" data-placement="top" title="Pinterest"><i class="fa fa-pinterest"></i></a></li>
-						<li><a href="#" data-placement="top" title="Google plus"><i class="fa fa-google-plus"></i></a></li>
-					</ul>
-				</div> -->
+				<div class="hero-facts">
+					<div>
+						<strong>4</strong>
+						<span>modules</span>
+					</div>
+					<div>
+						<strong>V2X</strong>
+						<span>vehicles, infrastructure, aerial platforms</span>
+					</div>
+					<div>
+						<strong>VLA</strong>
+						<span>distributed reasoning, communication, action</span>
+					</div>
+				</div>
 			</div>
+		</section>
+
+		<section id="overview" class="section overview-section">
+			<div class="container">
+				<div class="section-heading">
+					<p class="eyebrow">Tutorial Thesis</p>
+					<h2>From isolated ego-centric perception to distributed visual intelligence</h2>
+				</div>
+				<div class="overview-grid">
+					<div class="overview-text">
+						<p>X-Sense frames cooperation as a fundamental shift in computer vision: from isolated ego-centric perception toward distributed, foundation-model-driven visual intelligence operating across agents and infrastructure.</p>
+						<p>The tutorial connects cooperative sensing, multi-view learning, distributed foundation models, VLA agents, communication-aware inference, and scenario-based safety validation into one smart mobility research agenda.</p>
+					</div>
+					<div class="signal-panel">
+						<h3>Core Questions</h3>
+						<ul>
+							<li>Why is cooperation necessary beyond onboard ego-centric sensing?</li>
+							<li>What data infrastructure enables scalable cross-view cooperation?</li>
+							<li>How do we build distributed foundation models and VLA agents?</li>
+							<li>How do we validate and deploy safely under real constraints?</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="modules" class="section module-section">
+			<div class="container">
+				<div class="section-heading">
+					<p class="eyebrow">Overall Structure</p>
+					<h2>Four modules for cooperative autonomy</h2>
+				</div>
+				<div class="module-grid">
+					<article class="module-card">
+						<div class="module-index">01</div>
+						<h3>Motivation and Fundamental Challenges</h3>
+						<p class="module-focus">Why cooperation is necessary, and what new constraints it introduces.</p>
+						<ul>
+							<li>Safety, efficiency, scalability, cost, privacy</li>
+							<li>Ego-only limits: occlusion, limited FoV, long-tail events</li>
+							<li>Cooperation constraints: synchronization, calibration, latency, bandwidth, privacy, security</li>
+						</ul>
+					</article>
+					<article class="module-card">
+						<div class="module-index">02</div>
+						<h3>Datasets and Data Infrastructure</h3>
+						<p class="module-focus">What ego, infrastructure, V2X, aerial, multi-view, and simulation data can teach us.</p>
+						<ul>
+							<li>Time synchronization and calibration requirements</li>
+							<li>Annotation scope, geographic coverage, rare events</li>
+							<li>Bias, inconsistent protocols, missing long-tail scenarios</li>
+						</ul>
+					</article>
+					<article class="module-card">
+						<div class="module-index">03</div>
+						<h3>Cooperative Perception and Distributed Foundation Models</h3>
+						<p class="module-focus">How cooperative systems perceive, align, reason, communicate, and plan.</p>
+						<ul>
+							<li>Cooperative perception and spatio-temporal modeling</li>
+							<li>Foundation models and multimodal reasoning</li>
+							<li>Communication-efficient learning, uncertainty-aware fusion, VLA agents</li>
+						</ul>
+					</article>
+					<article class="module-card">
+						<div class="module-index">04</div>
+						<h3>Scenario-Based Safety Validation and Deployment</h3>
+						<p class="module-focus">How we trust cooperative systems before deployment.</p>
+						<ul>
+							<li>Accuracy plus latency, stability, compute, and fallback metrics</li>
+							<li>Splits, OOD suites, stress tests, reproducibility</li>
+							<li>Drift monitoring, fail-safe behavior, go/no-go criteria</li>
+						</ul>
+					</article>
+				</div>
+			</div>
+		</section>
+
+		<section id="speakers" class="section speaker-section">
+			<div class="container">
+				<div class="section-heading">
+					<p class="eyebrow">Organizers + Speakers</p>
+					<h2>X-Sense organizing team</h2>
+					<p class="section-note">Primary organizer: Yi-Ting Chen, National Yang Ming Chiao Tung University, Taiwan.</p>
+				</div>
+				<div class="speaker-grid">
+					<article class="speaker-card with-photo">
+						<img src="img/People/Yi_Ting_Chen.png" alt="Yi-Ting Chen">
+						<div><h3>Yi-Ting Chen</h3><p>National Yang Ming Chiao Tung University</p><span>Visual risk perception, heterogeneous traffic modeling, scenario-based safety validation</span></div>
+					</article>
+					<article class="speaker-card with-photo">
+						<img src="img/People/Zhenzhen_Liu.jpg" alt="Zhenzhen Liu">
+						<div><h3>Zhenzhen Liu</h3><p>Cornell University</p><span>V2X, infrastructure sensing, cooperative perception, foundation models</span></div>
+					</article>
+					<article class="speaker-card">
+						<h3>Minkyoung Cho</h3><p>University of Michigan</p><span>Robustness, uncertainty-aware fusion, real-world V2X deployment</span>
+					</article>
+					<article class="speaker-card">
+						<h3>Walter Zimmer</h3><p>University of California, Los Angeles</p><span>Roadside infrastructure and V2X datasets</span>
+					</article>
+					<article class="speaker-card">
+						<h3>Ross Greer</h3><p>University of California, Merced</p><span>Long-tail scenarios, data curation, language-based scene datasets</span>
+					</article>
+					<article class="speaker-card">
+						<h3>Yu-Hsiang Chen</h3><p>National Yang Ming Chiao Tung University</p><span>Drone datasets and heterogeneous traffic understanding</span>
+					</article>
+					<article class="speaker-card">
+						<h3>Rui Song</h3><p>University of California, Los Angeles</p><span>Synthesized scene reconstruction and scalable data infrastructure</span>
+					</article>
+					<article class="speaker-card">
+						<h3>Manmohan Chandraker</h3><p>UCSD / NEC Labs</p><span>3D perception, autonomy, and foundation-model-driven visual intelligence</span>
+					</article>
+					<article class="speaker-card">
+						<h3>Zewei Zhou</h3><p>University of California, Los Angeles</p><span>Multi-agent spatio-temporal scene understanding</span>
+					</article>
+					<article class="speaker-card">
+						<h3>Seth Zhao</h3><p>University of California, Los Angeles</p><span>Efficient V2X systems, quantization, cooperative perception</span>
+					</article>
+					<article class="speaker-card">
+						<h3>Hsu-kuang Chiu</h3><p>Carnegie Mellon University</p><span>Multimodal LLM-based cooperative autonomous driving</span>
+					</article>
+					<article class="speaker-card">
+						<h3>Jinsu Yoo</h3><p>The Ohio State University</p><span>Cross-view learning and collaboration as supervision</span>
+					</article>
+					<article class="speaker-card with-photo">
+						<img src="img/People/Min-Hung_Chen.png" alt="Min-Hung Chen">
+						<div><h3>Min-Hung Chen</h3><p>NVIDIA Research</p><span>Foundation models, multimodal perception and reasoning, 4D understanding</span></div>
+					</article>
+					<article class="speaker-card">
+						<h3>Qi Chen</h3><p>Toyota Motor North America</p><span>Closed-loop evaluation and safety validation</span>
+					</article>
+					<article class="speaker-card">
+						<h3>Olaf Op den Camp</h3><p>Netherlands Organisation for Applied Scientific Research (TNO)</p><span>Deployment readiness and system integration</span>
+					</article>
+					<article class="speaker-card">
+						<h3>Jiawei Yong</h3><p>Toyota Motor Corporation</p><span>Simulation, benchmarks, evaluation protocols</span>
+					</article>
+					<article class="speaker-card">
+						<h3>Yongkang Liu</h3><p>Toyota Motor North America</p><span>Scenario-based safety validation</span>
+					</article>
+					<article class="speaker-card">
+						<h3>Deyuan Qu</h3><p>Toyota Motor North America</p><span>Closed-loop evaluation and deployment criteria</span>
+					</article>
+					<article class="speaker-card">
+						<h3>Ruiyang Zhu</h3><p>University of Michigan</p><span>Collaborative map perception and robust V2X systems</span>
+					</article>
+				</div>
+			</div>
+		</section>
+
+		<section id="structure" class="section structure-section">
+			<div class="container">
+				<div class="section-heading">
+					<p class="eyebrow">Program Flow</p>
+					<h2>Full-day teaching plan</h2>
+				</div>
+				<div class="timeline">
+					<article class="timeline-item">
+						<div class="timeline-label">09:00</div>
+						<div class="timeline-body">
+							<h3>Opening Remarks and Tutorial Overview</h3>
+							<p><strong>Lead:</strong> Yi-Ting Chen</p>
+							<p>Introduce X-Sense, the organizing thesis, and the four guiding questions for the day.</p>
+						</div>
+					</article>
+					<article class="timeline-item">
+						<div class="timeline-label">09:10</div>
+						<div class="timeline-body">
+							<h3>Module 1: Motivation and Fundamental Challenges</h3>
+							<p><strong>Core speaker:</strong> Minkyoung Cho. <strong>Contributors:</strong> Minkyoung Cho, Zhenzhen Liu.</p>
+							<p>Limitations of ego-centric perception and real-world constraints in cooperation.</p>
+							<ul class="tag-list">
+								<li>Occlusion</li><li>Limited FoV</li><li>Long-tail events</li><li>Synchronization</li><li>Latency</li><li>Privacy and security</li>
+							</ul>
+						</div>
+					</article>
+					<article class="timeline-item">
+						<div class="timeline-label">10:50</div>
+						<div class="timeline-body">
+							<h3>Module 2: Datasets and Data Infrastructure</h3>
+							<p><strong>Core speaker:</strong> Walter Zimmer. <strong>Contributors:</strong> Ross Greer, Yu-Hsiang Chen, Rui Song, Manmohan Chandraker.</p>
+							<p>Ego, infrastructure, V2X, aerial, multi-view, and simulation datasets for cooperative perception.</p>
+							<ul class="tag-list">
+								<li>Temporal alignment</li><li>Calibration</li><li>Cross-view annotation</li><li>Dataset bias</li><li>Domain gaps</li><li>Reproducibility</li>
+							</ul>
+						</div>
+					</article>
+					<article class="timeline-item">
+						<div class="timeline-label">13:30</div>
+						<div class="timeline-body">
+							<h3>Module 3: Algorithms for Cooperative Perception and Distributed Foundation Models</h3>
+							<p><strong>Core speaker:</strong> Min-Hung Chen. <strong>Contributors:</strong> Zewei Zhou, Seth Zhao, Hsu-kuang Chiu, Jinsu Yoo.</p>
+							<p>Communication-aware algorithms, robust fusion, distributed foundation models, and VLA agents.</p>
+							<ul class="tag-list">
+								<li>Cooperative 3D perception</li><li>Cross-view representation</li><li>Spatio-temporal modeling</li><li>V2V-LLM</li><li>VLA agents</li><li>Uncertainty-aware fusion</li>
+							</ul>
+						</div>
+					</article>
+					<article class="timeline-item">
+						<div class="timeline-label">15:20</div>
+						<div class="timeline-body">
+							<h3>Module 4: Scenario-Based Safety Validation and Deployment</h3>
+							<p><strong>Core speaker:</strong> Yi-Ting Chen. <strong>Contributors:</strong> Qi Chen, Olaf Op den Camp, Minkyoung Cho, Jiawei Yong, Yongkang Liu, Deyuan Qu.</p>
+							<p>Closed-loop evaluation, deployment readiness, system integration, and open problems.</p>
+							<ul class="tag-list">
+								<li>Stress testing</li><li>System metrics</li><li>OOD validation</li><li>Drift monitoring</li><li>Fail-safe design</li><li>Go/no-go criteria</li>
+							</ul>
+						</div>
+					</article>
+				</div>
+			</div>
+		</section>
+
+		<section id="verification" class="section verification-section">
+			<div class="container">
+				<div class="section-heading">
+					<p class="eyebrow">Deployment Reality</p>
+					<h2>Verification needs behavior, system health, and auditability</h2>
+				</div>
+				<div class="verification-grid">
+					<div class="verification-panel">
+						<h3>Format and logistics</h3>
+						<ul>
+							<li><strong>Format:</strong> full-day, in-person ECCV 2026 tutorial</li>
+							<li><strong>Audience:</strong> computer vision, machine learning, autonomous driving, embodied AI, and multi-agent systems</li>
+							<li><strong>Expected attendance:</strong> 100-200 participants</li>
+							<li><strong>Outcome:</strong> a structured design space for real-world distributed perception systems</li>
+						</ul>
+					</div>
+					<div class="checklist-panel">
+						<h3>Deployment validation focus</h3>
+						<ul class="checklist">
+							<li>Closed-loop evaluation and scenario-based stress testing</li>
+							<li>System-level metrics for latency, reliability, and resource headroom</li>
+							<li>OOD and long-tail validation with reproducible protocols</li>
+							<li>Drift monitoring and interpretable multi-agent state estimation</li>
+							<li>Fail-safe design and explicit deployment readiness criteria</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer class="tutorial-footer">
+		<div class="container">
+			<p>DriveX and X-Sense | ECCV 2026 Tutorial | Malmö image: Maria Eklind, CC BY-SA 2.0</p>
+			<a href="#home">Back to top</a>
 		</div>
-	</div>
 	</footer>
 </div>
 <a href="#" class="scrollup"><i class="fa fa-angle-up active"></i></a>
-<!-- javascript
-    ================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
 <script src="js/jquery.js"></script>
-<script src="js/jquery.easing.1.3.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
 <script src="js/jquery.fancybox.pack.js"></script>
-<script src="js/jquery.fancybox-media.js"></script> 
-<script src="js/portfolio/jquery.quicksand.js"></script>
-<script src="js/portfolio/setting.js"></script>
 <script src="js/jquery.flexslider.js"></script>
-<script src="js/animate.js"></script>
 <script src="js/custom.js"></script>
-<script src="js/owl-carousel/owl.carousel.js"></script>
 </body>
 </html>
