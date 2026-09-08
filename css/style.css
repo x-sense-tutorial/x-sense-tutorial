@@ -152,6 +152,45 @@ body {
 
 .tutorial-hero .eyebrow {
 	color: #7fe1c6;
+	margin-bottom: 10px;
+}
+
+.hero-venue {
+	align-items: center;
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
+	background: rgba(255, 255, 255, 0.11);
+	border: 1px solid rgba(255, 255, 255, 0.24);
+	border-radius: 999px;
+	box-shadow: 0 8px 24px rgba(5, 18, 15, 0.16);
+	color: #f4fbf8;
+	display: inline-flex;
+	font-size: 16px;
+	font-weight: 600;
+	gap: 10px;
+	line-height: 1.35;
+	margin: 0 0 22px;
+	max-width: 100%;
+	padding: 9px 15px;
+}
+
+.hero-venue i {
+	color: #7fe1c6;
+	font-size: 18px;
+}
+
+.hero-venue strong {
+	color: #a9ebd8;
+	font-size: 12px;
+	font-weight: 800;
+	letter-spacing: 0.11em;
+	margin-right: 7px;
+	text-transform: uppercase;
+}
+
+.venue-separator {
+	color: #7fe1c6;
+	margin: 0 5px;
 }
 
 .tutorial-hero h1 {
@@ -700,6 +739,17 @@ body {
 
 	.hero-lede {
 		font-size: 20px;
+	}
+
+	.hero-venue {
+		align-items: flex-start;
+		border-radius: 10px;
+		font-size: 15px;
+		padding: 9px 12px;
+	}
+
+	.hero-venue i {
+		margin-top: 2px;
 	}
 
 	.hero-facts,
